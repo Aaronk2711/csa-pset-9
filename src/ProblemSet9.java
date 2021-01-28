@@ -49,6 +49,10 @@ public class ProblemSet9 {
             return null;
         }
 
+        if (arr.length == 0) {
+            return arr;
+        }
+
         int first = arr[0];
 
         for (int i = 0; i < arr.length-1; i++) {
@@ -66,8 +70,7 @@ public class ProblemSet9 {
             return null;
         }
 
-        int length = end-start-1;
-        int[] answer = new int[length+1];
+        int[] answer = new int[end-start];
         int counter = 0;
 
         for (int i = start; i <= end-1; i++) {
